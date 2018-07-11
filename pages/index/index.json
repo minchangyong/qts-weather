@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "青团小天气助手",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "heartbeat": "/components/heartbeat/heartbeat"
+  }
+}
