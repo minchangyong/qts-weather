@@ -350,24 +350,10 @@ Page({
       },
     })
   },
-  onShareAppMessage (res) {
+  onShareAppMessage () {
     return {
-      title: 'Quiet Weather--安静天气',
-      path: `/pages/index/index`,
-      // imageUrl: '',
-      success() {},
-      fail(e) {
-        let errMsg = e.errMsg || ''
-        // 对不是用户取消转发导致的失败进行提示
-        let msg = '分享失败，可重新分享'
-        if (errMsg.indexOf('cancel') !== -1) {
-          msg = '取消分享'
-        }
-        wx.showToast({
-          title: msg,
-          icon: 'none',
-        })
-      }
+      title: '青团小天气助手-您身边的天气预报好帮手',
+      path: `/pages/index/index`
     }
   },
   menuMainMove (e) {
